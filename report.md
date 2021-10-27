@@ -65,11 +65,13 @@ There was missing symbol in 'cmd_line_parser.py'.
                         help='Converts news in html format. Receives the path for file saving')
 ```
 
-3. The other problem apperied while I was trying to run example from READ.me
+3. The other problem apperied while I was trying to run example from README
+
  ```sh
 AttributeError: object has no attribute 'description'
 ```
 It was problem in 'rss_parser.py'. I have fixed it such way:
+
 **Before:**
  ```sh
 info_description = info.description
