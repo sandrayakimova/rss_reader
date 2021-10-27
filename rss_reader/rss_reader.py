@@ -4,6 +4,9 @@
 import os
 import sys
 
+file_dir = os.path.dirname(__file__)
+sys.path.append(file_dir)
+
 from cache import cache_news, get_cached_news
 from cmd_line_parser import make_arg_parser, outputjson, output_verbose
 from html_converter import convert_news_to_html
