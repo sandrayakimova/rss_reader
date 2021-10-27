@@ -21,6 +21,7 @@ sys.path.append(file_dir)
 2. Three other problems were syntax:
 
 There was incorrect import of function ***output_json***  in 'rss_reader.py'
+
 **Before:**
  ```sh
 from cmd_line_parser import make_arg_parser, outputjson, output_verbose
