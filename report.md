@@ -52,7 +52,7 @@ if cmd_args.source:
         except Exception:
             raise er.UnreachableURLError("URL is invalid.")
 ```
-There was missing symbols in 'cmd_line_parser.py'.
+There was missing symbol in 'cmd_line_parser.py'.
 
 **Before:**
  ```sh
