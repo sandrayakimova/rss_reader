@@ -66,7 +66,7 @@ class RSSparser:
             info_title = html.unescape(info.title)
             info_link = info.link
             info_date = info.published
-            info_description = info.description
+            info_description = getattr(info, 'description', '')
 
             # Pulling data out of HTML part
             soup = BeautifulSoup(info_description, features="html.parser")
