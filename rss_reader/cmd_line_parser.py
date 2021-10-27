@@ -27,7 +27,7 @@ def make_arg_parser():
     parser.add_argument('--verbose', action='store_true', help='Outputs verbose status messages')
     parser.add_argument('--limit', type=int, default=None, help='Limits the number of displayed news')
     parser.add_argument('--date', type=convert_date, help='Displays news for the specified day')
-    parser.add_argument('--to-html', type=str, default=',
+    parser.add_argument('--to-html', type=str, default='',
                         help='Converts news in html format. Receives the path for file saving')
     parser.add_argument('--to-pdf', type=str, default='',
                         help='Converts news in pdf format. Receives the path for file saving.')

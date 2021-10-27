@@ -28,8 +28,8 @@ def check_url_availability(cmd_args):
         try:
             requests.get(url)
             LOGGER.info('Check the URL availability.')
-    except Exception:
-        raise er.UnreachableURLError("URL is invalid.")
+        except Exception:
+            raise er.UnreachableURLError("URL is invalid.")
         else:
             LOGGER.info('URL is valid. Connection established.')
             return True
